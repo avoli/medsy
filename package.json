@@ -1,0 +1,42 @@
+{
+  "name": "medsy",
+  "version": "1.0.0",
+  "private": true,
+  "author": "RedQ, Inc.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "yarn workspaces run rimraf \"{.next,dist,build,node_modules}\" && rimraf node_modules",
+    "dev:medsy-modern": "yarn workspace @medsy/modern dev",
+    "dev:medsy-classic": "yarn workspace @medsy/classic dev",
+    "dev:medsy-minimal": "yarn workspace @medsy/minimal dev",
+    "build:medsy-modern": "yarn workspace @medsy/modern build",
+    "build:medsy-classic": "yarn workspace @medsy/classic build",
+    "export:medsy-classic": "yarn workspace @medsy/classic next export",
+    "build:medsy-minimal": "yarn workspace @medsy/minimal build",
+    "serve:medsy-modern": "yarn workspace @medsy/modern start",
+    "serve:medsy-classic": "yarn workspace @medsy/classic start",
+    "serve:medsy-minimal": "yarn workspace @medsy/minimal start",
+    "deploy-vercel:medsy-modern": "cd packages/medsy-modern && vercel --prod",
+    "deploy-vercel:medsy-classic": "cd packages/medsy-classic && vercel --prod",
+    "deploy-vercel:medsy-minimal": "cd packages/medsy-minimal && vercel --prod"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,jsx,md,css}": [
+      "prettier --trailing-comma es5 --single-quote --write"
+    ]
+  }
+}

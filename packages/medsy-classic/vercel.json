@@ -1,0 +1,20 @@
+{
+  "env": {
+    "GOOGLE_SPREADSHEET_ID_PRODUCT": "your_google_spreadsheet_id_for_product_here",
+    "GOOGLE_SPREADSHEET_ID_ORDER": "your_google_spreadsheet_id_for_order_here",
+    "GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL": "your_google_service_account_client_email_here",
+    "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY": "your_google_service_account_private_key_here",
+    "STRIPE_PUBLISHABLE_KEY": "pk_test_51HQfPBG7O85kpbpob80QYQOdQBJYbz1UOKXuvvXjzXJnD5TSna7UkG9KAzTXuBIpGoQy2OhTF7xbMdXpyVaHJtlj00blGJhMAz",
+    "STRIPE_SECRET_KEY": "sk_test_51HQfPBG7O85kpbpoGFYqe5CijiSwIziysHBHo1wjX43M7wggubiysDTR67OecRmIVbrsD1ViaYyYUldckrPSyXKB00g8zyH7BZ"
+  },
+  "build": {
+    "env": {
+      "GOOGLE_SPREADSHEET_ID_PRODUCT": "your_google_spreadsheet_id_for_product_here",
+      "GOOGLE_SPREADSHEET_ID_ORDER": "your_google_spreadsheet_id_for_order_here",
+      "GOOGLE_SERVICE_ACCOUNT_CLIENT_EMAIL": "your_google_service_account_client_email_here",
+      "GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY": "your_google_service_account_private_key_here",
+      "STRIPE_PUBLISHABLE_KEY": "pk_test_51HQfPBG7O85kpbpob80QYQOdQBJYbz1UOKXuvvXjzXJnD5TSna7UkG9KAzTXuBIpGoQy2OhTF7xbMdXpyVaHJtlj00blGJhMAz",
+      "STRIPE_SECRET_KEY": "sk_test_51HQfPBG7O85kpbpoGFYqe5CijiSwIziysHBHo1wjX43M7wggubiysDTR67OecRmIVbrsD1ViaYyYUldckrPSyXKB00g8zyH7BZ"
+    }
+  }
+}
